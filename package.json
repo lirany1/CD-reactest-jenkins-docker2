@@ -101,8 +101,8 @@
     "redux-thunk": "^3.1.0",
     "resolve-path": "^1.4.0",
     "rxjs": "^7.8.1",
-    "express": "^4.21.2",
-    "body-parser": "^1.20.3",
+    "express": "^4.22.1",
+    "body-parser": "^1.20.4",
     "cors": "^2.8.5",
     "compression": "^1.7.5"
   },
