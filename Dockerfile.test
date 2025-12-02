@@ -1,0 +1,20 @@
+# Test Dockerfile
+FROM node:20-alpine
+
+# Install dependencies
+RUN apk update && apk upgrade
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Run tests
+CMD ["npm", "test"]
